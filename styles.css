@@ -1,0 +1,138 @@
+body {
+	margin: 0;
+	width: 100%;
+	height: 90%;
+	background-color: #121212;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	margin-top: 5%;
+	display: grid;
+	grid-template-columns: 70% 30%;
+	grid-template-rows: 70% 20%;
+	grid-template-areas:
+		"iframe-container sidebar"
+		"details sidebar"
+}
+
+.details {
+	grid-area: details;
+	width: 98%;
+	height: 100%;
+	background-color: #121212;
+	margin-left: 2%;
+	color: grey;
+}
+
+header {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 5%;
+	position: fixed;
+	background-color: #1f1f1f;
+	text-align: center;
+}
+
+html {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+}
+
+input[type=text] {
+	width: 20%;
+    margin: 0;
+    padding: .5%;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: #121212;
+    background: #121212;
+    color: grey;
+}
+
+input[type=submit] {
+    margin: 0;
+    padding: 0;
+    padding: .5%;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: #333333;
+    background: #333333;
+    color: grey;
+}
+
+.iframe-container{
+	grid-area: figure;
+	position: relative;
+  	padding-bottom: 56.25%;
+  	height: 0;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+}
+
+.query {
+	background-color: #1f1f1f;
+	margin-top: .5%
+}
+
+p {
+	width: 98%;
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	grid-area: sidebar;
+	width: 100%;
+	height: 100%;
+	background-color: #121212;
+}
+
+.videos {
+	margin-left: 5%;
+	width: 80%;
+	height: 20%;
+	background-color: black;
+	border-color: grey;
+	border-style: solid;
+}
+
+#video1 {
+	background-image: url("DSOTM.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#video2 {
+	background-image: url("WYWH.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#video3 {
+	background-image: url("ANIMALS.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#video4 {
+	background-image: url("THEWALL.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
